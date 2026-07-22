@@ -7,7 +7,7 @@ model = pk.load(open('model.pkl','rb'))
 
 st.header('Car Price Prediction ML Model')
 
-car_data = pd.read_csv('cardetails.csv.xls')
+car_data = pd.read_csv('Cardetails.csv.xls')
 
 def get_brand_name(car_name):
     car_name = car_name.split(' ')[0]
