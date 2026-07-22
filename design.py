@@ -44,8 +44,7 @@ if st.button("Predict"):
        'Jaguar', 'Land', 'MG', 'Volvo', 'Daewoo', 'Kia', 'Fiat', 'Force',
        'Ambassador', 'Ashok', 'Isuzu', 'Opel'],
                           [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31])
-    st.write(input_data_model)
-    st.write(input_data_model.dtypes)
+    
     car_price = model.predict(input_data_model)
 
     st.markdown('Car Price is going to be '+ str(car_price[0]))
